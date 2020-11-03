@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="taskbar.css">
+    <link rel="stylesheet" href="crtfx.css">
+    <link rel="shortcut icon" href="icons/win95.png" />
+    <script src="code.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+    // document.addEventListener('mousemove', e => { cursor.setAttribute("style", "top: "+(e.pageY -10)+"px; left: "+(e.pageX -5)+"px;") });
+    </script>
+    <title>WINDOWS_95</title>
+</head>
+
+
+
+<body id="background" >
+    
+    <div id="crtglass" class="crt"></div>
+    
+    <div id="black_screen"><div id="turn_on"></div></div>
+    <!-- <img src="./img/arrow.png" id="cursor"></div> -->
+    <div id="grid"></div>
+    <div id="refresh"></div>
+    <div id="refresh2"></div>
+    <div id="light"></div>
+
+
+    <div class="window_style" id="window_login" unselectable="on" onselectstart="return false;">
+        
+        <div id="window_login_tab">
+           
+            <h6 id="tab_title">LogIn_Client</h6>
+
+            <div class="tab_btn" id="close">
+                <H6 class="tab_btn_ico">r</H6>
+            </div>
+
+            <div class="tab_btn" id="max">
+                <H6 class="tab_btn_ico">1</H6>
+            </div>
+
+            <div class="tab_btn" id="min">
+                <H6 class="tab_btn_ico">0</H6>
+            </div>
+
+        </div>
+
+        <h6 id="title_login">Please Enter your Authentication Information.</h6>
+
+        <div id="contenedor_login">
+
+            <h6 class="login_txt" id="username_txt">Username :</h6>
+            <input class="login_txt input_login" id="username_val" cols="15" maxlength="13"></textarea>
+            <br>
+            <h6 class="login_txt" id="password_txt">Password : </h6>
+            <input type="password" class="login_txt input_login" id="password_val" cols="12" maxlength="15"></input>
+
+        </div>
+
+        <div id="btn" onclick="login()" ontouchend="login()" >
+            <H6 id="btn_txt">OK</H6>
+        </div>
+
+    </div>
+    
+</body>
+
+</html>

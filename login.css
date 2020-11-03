@@ -1,0 +1,194 @@
+#window_login {
+    padding: 5px;
+    width: 65%;
+    min-width: 250px;
+    max-width: 450px;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    position: absolute;
+    z-index: 2;
+}
+
+.tab_btn {
+    margin: 5px;
+    width: 20px;
+    height: 20px;
+    float: right;
+    position: relative;
+    display: inline;
+}
+#window_login_tab {
+    width: 100%;
+    height: auto;
+    background-color: rgb(197, 197, 197);
+    position: relative;
+}
+
+
+
+#tab_title {
+    top: 7.5px;
+    text-align: left;
+    position: relative;
+    font-size: 15px;
+    font-family: "MS";
+    margin-left: 10px;
+    display: inline;
+}
+
+.tab_btn_ico {
+    transform: translate(0, 23%);
+    text-align: center;
+    font-size: 16px;
+    font-family: "MA";
+}
+
+#close {
+    background-color: darkgrey;
+    border: 2.5px outset #e6e6e6;
+    transition: 0.3s;
+}
+
+#max {
+    background-color: darkgrey;
+    border: 2.5px outset #e6e6e6;
+    transition: 0.3s;
+}
+
+#min {
+    background-color: darkgrey;
+    border: 2.5px outset #e6e6e6;
+    transition: 0.3s;
+}
+
+
+/* Hover Btns */
+
+#close:hover {
+    border: 2.5px outset #ececec;
+    transition: 0.5s;
+}
+
+#max:hover {
+    border: 2.5px outset #ececec;
+    transition: 0.5s;
+}
+
+#min:hover {
+    border: 2.5px outset #ececec;
+    transition: 0.5s;
+}
+
+
+/* Click Btns */
+
+#close:active {
+    border: 2.5px inset #e6e6e6;
+    transition: 0.5s;
+}
+
+#max:active {
+    border: 2.5px inset #e6e6e6;
+    transition: 0.5s;
+}
+
+#min:active {
+    border: 2.5px inset #e6e6e6;
+    transition: 0.5s;
+}
+
+#title_login {
+    font-family: MS;
+    font-size: 90%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#contenedor_login {
+    margin-left: 5px;
+    margin-right: 5px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.login_txt {
+    position: relative;
+    font-size: 15px;
+    display: inline-block;
+}
+@media screen and (max-width: 416px) {
+    .input_login{
+        width: 120px;
+    }
+  }
+@media screen and (min-width: 416px) {
+    .input_login{
+        width: 150px;
+    }
+  }
+.input_login {
+    font-family: MS;
+    height: 20px;
+    resize: none;
+    outline: none;
+    border: 2px inset #cecece;
+    padding-left: 5px;
+    overflow: hidden;
+    border-radius: 0;
+}
+
+#username_val {
+    margin-bottom: 5px;
+}
+#username_txt{
+    font-family: MS;
+    vertical-align: middle;
+}
+#password_txt {
+    vertical-align: middle;
+    font-family: MS;
+}
+#password_val {
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-family: MS;
+}
+
+#btn {
+    font-family: MS;
+    width: 86px;
+    height: 33px;
+    background-color: rgb(155, 155, 155);
+    border: 2px outset #cecece;
+    border-bottom-color: #979797;
+    border-right-color: #979797;
+    transition: 0.15s;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+#btn:hover {
+    border: 2px outset #c9c9c9;
+    border-bottom-color: #353535;
+    border-right-color: #383838;
+    transition: 0.15s;
+}
+
+#btn:active {
+    border: 2px inset #cccccc;
+    border-top-color: #979797;
+    border-left-color: #979797;
+    transition: 0.15s;
+}
+
+#btn_txt {
+    text-align: center;
+    font-size: 15px;
+    transform: translate(0, 50%);
+}
+

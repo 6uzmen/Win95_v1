@@ -1,0 +1,96 @@
+@keyframes flicker {
+    0% {
+        opacity: 0.63857;
+    }
+    5% {
+        opacity: 0.66026;
+    }
+    10% {
+        opacity: 0.6946;
+    }
+    15% {
+        opacity: 0.00134;
+    }
+    20% {
+        opacity: 0.74085;
+    }
+    25% {
+        opacity: 0.45732;
+    }
+    30% {
+        opacity: 0.86369;
+    }
+    35% {
+        opacity: 0.59484;
+    }
+    40% {
+        opacity: 0.95889;
+    }
+    45% {
+        opacity: 0.88797;
+    }
+    50% {
+        opacity: 0.79505;
+    }
+    55% {
+        opacity: 0.32667;
+    }
+    60% {
+        opacity: 0.92371;
+    }
+    65% {
+        opacity: 0.03501;
+    }
+    70% {
+        opacity: 0.14883;
+    }
+    75% {
+        opacity: 0.2428;
+    }
+    80% {
+        opacity: 0.2755;
+    }
+    85% {
+        opacity: 0.22809;
+    }
+    90% {
+        opacity: 0.08919;
+    }
+    95% {
+        opacity: 0.62675;
+    }
+    100% {
+        opacity: 0.98637;
+    }
+}
+
+.crt::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(192, 192, 192, 0.1);
+    opacity: 0;
+    z-index: 2;
+    pointer-events: none;
+    animation: flicker 0.35s infinite;
+    box-shadow: inset -1px 6px 40px 5px rgba(0, 0, 0, 0.173);
+}
+
+.crt::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(rgba(153, 153, 153, 0) 90%, rgba(187, 187, 187, 0.25) 80%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+    z-index: 2;
+    background-size: 100% 2px, 3px 100%;
+    pointer-events: none;
+    box-shadow: inset -1px 6px 40px 5px rgba(0, 0, 0, 0.111);
+}

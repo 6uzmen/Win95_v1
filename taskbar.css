@@ -1,0 +1,310 @@
+
+#taskbar{
+    position: absolute;
+    width: 100%;
+    z-index: 4;
+    bottom: -40px;
+    height: 40px;
+    background-color:   #b6b6b6;
+    border-top: 3px outset #e6e6e6;
+    box-shadow: 0px -5px 5px 0px rgba(0,0,0,0.30);
+    -webkit-animation-name: none;
+            animation-name: none;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+}
+
+@keyframes taskbarin {
+    from{bottom: -40px;}
+    to{bottom: 0%;}
+  }
+@-webkit-keyframes taskbarin  {
+    from{bottom: -40px;}
+    to{bottom: 0%;}
+  }
+
+#taskbar_win{
+    position: relative;
+    width: 90px;
+    height: 27px;
+    background-color: #b6b6b6;
+    border: 3px outset #e6e6e6;
+    border-right-color: #8a8a8a;
+    border-bottom-color: #8a8a8a;
+    margin: 3px 0px 4px 5px;
+    display: inline-block;
+    
+}
+
+
+#taskbar_win_display{
+
+    padding-top: 3px;
+    padding-left: 3px;
+    padding-bottom: 3px;
+    position: absolute;
+    max-width: 60%;
+    background-color: #b6b6b6;
+    background-color: #b6b6b6;
+    border: 3px outset #e6e6e6;
+    border-right-color: #8a8a8a;
+    border-bottom-color: #a3a3a3;
+    transition: 0.1s;
+    bottom: 0px;
+    z-index: 3;
+    display:grid;
+    grid-template-columns: 15% 20% 55% 10%;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    box-shadow: 10px 10px rgba(0, 0, 0, .2);
+    opacity: 0;
+    -webkit-animation-name: none;
+            animation-name: none;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+}
+
+@keyframes taskbarDisin {
+    from{bottom: -100px;opacity: 0;animation-duration:0.5s;}
+    to{bottom: 43px;opacity: 1;animation-duration:0.5s;}
+  }
+@-webkit-keyframes taskbarDisin  {
+    from{bottom: -100px;opacity: 0;animation-duration:0.5s;}
+    to{bottom: 43px;opacity: 1;animation-duration:0.5s;}
+  }
+  @keyframes taskbarDisout {
+    from{bottom: 43px;opacity: 1;animation-duration:0.2s;}
+    to{bottom: -50px;opacity: 0;animation-duration:0.2s;}
+  }
+@-webkit-keyframes taskbarDisout  {
+    from{bottom: 43px;opacity: 1;animation-duration:0.2s;}
+    to{bottom: -50px;opacity: 0;animation-duration:0.2s;}
+  }
+
+@media screen and (max-width: 1400px) {
+    #taskbar_win_display{
+        height: 55%;
+    }
+  }
+@media screen and (min-width: 1400px) {
+    #taskbar_win_display{
+        height: 45%;
+    }
+  }
+
+#taskbar_win_display_banner{
+    background: rgb(26,206,224);
+    background: linear-gradient(0deg, rgba(26,206,224,1) 0%, rgba(25,104,225,1) 42%);
+    grid-row-start: 1;
+    grid-row-end: 11;
+    writing-mode: vertical-lr;
+    padding-bottom: 10px;
+    padding-right: 3px;
+}
+
+#display_banner_text{
+    font-family: arial;
+    font-size: 24px;
+    transform: rotate(180deg) ;
+    vertical-align: middle;
+    width: 100%;
+    color: aliceblue;
+   
+}
+#display_banner_text_95{
+    font-family: helvetica;
+
+   
+}
+.icons_text_plus{
+    position: relative;
+    font-family: MA;
+    font-size: 13px;
+    border: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-left: 5px;
+    pointer-events: none;
+}
+
+#taskbar_win_display_element7{
+    border-bottom: 2px outset #cccccc;
+}
+#taskbar_win_display_element8{
+    border-top: 2px outset #d3d3d3;
+}
+#taskbar_win_display_element17{
+    border-bottom: 2px outset #cccccc;
+}
+#taskbar_win_display_element18{
+    border-top: 2px outset #d3d3d3;
+}
+#taskbar_win_display_element27{
+    border-bottom: 2px outset #cccccc;
+}
+#taskbar_win_display_element28{
+    border-top: 2px outset #d3d3d3;
+
+}
+.taskbar_win_display_element:hover{
+
+}
+.taskbar_win_display_element:active{
+    background-color: #b3b3b3;
+}
+
+.icons{
+    position: relative;
+    height: 85%;
+    float: right;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-right: 7.5%;
+    pointer-events: none;
+}
+.icons_text{
+    position: relative;
+    font-family: MS;
+    border: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-left: 5px;
+    pointer-events: none;
+}
+
+
+#taskbar_win_text{
+    margin-right: 15%;
+    margin-top: 5px;
+    font-size: 100%;
+    font-family: MS;
+    float: right;
+    display: inline;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+#taskbar_win_ico{
+    margin-top: 3px;
+    margin-left: 12%;
+    width: 22px;
+    height: 22px;
+    float: left;
+    display: inline;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+
+}
+
+#taskbar_clock{
+    position: relative;
+    float: right;
+    width: 90px;
+    height: 27px;
+    background-color: #b6b6b6;
+    border: 2px inset #e6e6e6;
+    border-top-color: #a1a1a1;
+    border-left-color: #a1a1a1;
+    margin: 4px 8px 0px 5px;
+}
+
+#taskbar_vol{
+    margin-top: 3px;
+    margin-left: 4px;
+    width: 20px;
+    height: 20px;
+    float: left;
+    display: inline;
+}
+
+
+
+#taskbar_time{
+    position: relative;
+    text-align: right;
+    margin-right: 5px;
+    top: 50%;
+    transform: translate(0,-55%);
+    font-size: 80%;
+    font-family: MS;
+    float: right;
+    display: inline;
+}
+
+#programs_window{
+    position: absolute;
+    height: 80px;
+    background-color: #b6b6b6;
+    border: 3px outset #d1d1d1;
+    box-shadow: 10px 10px rgba(0, 0, 0, .2);
+    z-index: 3;
+}
+#documents_window{
+    position: absolute;
+    height: fit-content;
+    background-color: #b6b6b6;
+    border: 3px outset #d1d1d1;
+    box-shadow: 10px 10px rgba(0, 0, 0, .2);
+    z-index: 3;
+}
+
+#documents_readme{
+    margin-left: 3px;
+    margin-top: 2px;
+}
+#documents_readme:hover{
+    background-color: #c0c0c0;
+}
+#readme{
+    pointer-events: none;
+    position: relative;
+    transform: translateY(-25%);
+    pointer-events: none;
+    font-size: 13px;
+    margin-left: 5px;
+    padding-left: 2px;
+    font-family: MS;
+    display: inline-block;
+}
+#readme_ico{
+    pointer-events: none;
+    position: relative;
+    height: 22px;
+    display: inline-block;
+
+}
+#documents_contact{
+    margin-left: 3px;
+    margin-top: 2px;
+}
+#documents_contact:hover{
+    background-color: #c0c0c0;
+}
+#contact{
+    pointer-events: none;
+    position: relative;
+    transform: translateY(-25%);
+    pointer-events: none;
+    font-size: 13px;
+    margin-left: 5px;
+    padding-left: 2px;
+    font-family: MS;
+    display: inline-block;
+}
+#contact_ico{
+    pointer-events: none;
+    position: relative;
+    height: 22px;
+    display: inline-block;
+}
